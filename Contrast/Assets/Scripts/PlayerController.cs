@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-    BoxCollider m_enemyCollider;
+    Collider m_enemyCollider;
     [SerializeField] float m_moveSpeed;
     float m_distanceToObstacle;
     GameObject m_enemyObj;
@@ -39,7 +39,8 @@ public class PlayerController : MonoBehaviour
 
         if(m_enemyObj != null)
         {
-            m_enemyObj.transform.position = new Vector3(transform.position.x , transform.position.y , transform.position.z + 1f);
+            m_enemyObj.transform.position = transform.position + (transform.forward * 1.1f);
+            m_enemyObj.transform.rotation = transform.rotation;
         }
 
         if (Input.GetKeyDown(KeyCode.JoystickButton0))
@@ -63,12 +64,17 @@ public class PlayerController : MonoBehaviour
 
                     if(hit.collider.gameObject.tag.Equals("Enemy"))
                     {
-                        m_enemyCollider = GameObject.Find("Enemy").GetComponent<BoxCollider>();
+                        m_enemyCollider = hit.collider;
                         m_enemyCollider.enabled = false;
                         m_enemyObj = hit.collider.gameObject;
 
                     }
                 }
+            }
+            else
+            {
+                m_enemyCollider.enabled = true;
+                m_enemyObj = null;
             }
         }
 
