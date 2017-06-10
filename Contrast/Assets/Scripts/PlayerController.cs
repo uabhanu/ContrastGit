@@ -17,8 +17,8 @@ public class PlayerController : MonoBehaviour
 
     void PlayerMovement()
     {
-        float moveHorizontal = Input.GetAxisRaw("Horizontal");
-        float moveVertical = Input.GetAxisRaw("Vertical");
+        float moveHorizontal = Input.GetAxis("LeftJoystickHorizontal");
+        float moveVertical = Input.GetAxis("LeftJoystickVertical");
 
         Vector3 movement = new Vector3(moveHorizontal , 0f , moveVertical);
 
