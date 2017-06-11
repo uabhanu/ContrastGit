@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 81acf44eb7611a24a8d4ffbe4d97dd2a
-timeCreated: 1497119605
+timeCreated: 1497138831
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -37,13 +37,7 @@ ModelImporter:
     400026: Neck
     400028: Spine1
     400030: Spine2
-    2300000: FloorRoot
-    2300002: HipRoot
-    3300000: FloorRoot
-    3300002: HipRoot
     4300000: Mesh
-    4300002: FloorRoot
-    4300004: HipRoot
     9500000: //RootNode
     13700000: Mesh
   materials:

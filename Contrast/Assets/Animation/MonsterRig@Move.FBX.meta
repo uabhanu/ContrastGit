@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 97ea236f156b7c6448c3ad2dfafedb21
-timeCreated: 1497119738
+timeCreated: 1497138831
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -37,18 +37,12 @@ ModelImporter:
     400026: Neck
     400028: Spine1
     400030: Spine2
-    2300000: FloorRoot
-    2300002: HipRoot
-    3300000: FloorRoot
-    3300002: HipRoot
     4300000: Mesh
-    4300002: FloorRoot
-    4300004: HipRoot
-    7400000: Take 001
+    7400000: Move
     9500000: //RootNode
     13700000: Mesh
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
@@ -69,7 +63,67 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Move
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: FloorRoot
+        weight: 1
+      - path: FloorRoot/HipRoot
+        weight: 1
+      - path: FloorRoot/HipRoot/Spine1
+        weight: 1
+      - path: FloorRoot/HipRoot/Spine1/Spine2
+        weight: 1
+      - path: FloorRoot/HipRoot/Spine1/Spine2/BicepL
+        weight: 1
+      - path: FloorRoot/HipRoot/Spine1/Spine2/BicepL/ForearmL
+        weight: 1
+      - path: FloorRoot/HipRoot/Spine1/Spine2/BicepL/ForearmL/HandL
+        weight: 1
+      - path: FloorRoot/HipRoot/Spine1/Spine2/BicepL/ForearmL/HandL/FingersL
+        weight: 1
+      - path: FloorRoot/HipRoot/Spine1/Spine2/BicepR
+        weight: 1
+      - path: FloorRoot/HipRoot/Spine1/Spine2/BicepR/ForearmR
+        weight: 1
+      - path: FloorRoot/HipRoot/Spine1/Spine2/BicepR/ForearmR/HandR
+        weight: 1
+      - path: FloorRoot/HipRoot/Spine1/Spine2/BicepR/ForearmR/HandR/FingersR
+        weight: 1
+      - path: FloorRoot/HipRoot/Spine1/Spine2/Neck
+        weight: 1
+      - path: FloorRoot/HipRoot/Spine1/Spine2/Neck/Head
+        weight: 1
+      - path: Mesh
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
