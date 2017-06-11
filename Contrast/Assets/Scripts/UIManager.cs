@@ -20,9 +20,13 @@ public class UIManager : MonoBehaviour
             return;
         }
 
-        if(petalsCount > 0)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            petalImages[petalsCount - 1].enabled = true;
+            if(petalsCount < petalImages.Length)
+            {
+                petalsCount++;
+                petalImages[petalsCount - 1].enabled = true;
+            }
         }
 	}
 }
