@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         maxDistanceToPickup = 3.5f;
+        Physics.IgnoreCollision(this.GetComponent<Collider>(), HorrorPlayerStats.horrorPlayerStats.GetComponent<Collider>());
     }
 
     private void Update()

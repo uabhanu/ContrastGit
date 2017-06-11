@@ -16,6 +16,6 @@ public class LockRotation : MonoBehaviour {
 	}
 
     private void FixedUpdate () {
-        this.transform.rotation = q_OriginalRotation;
+       this.transform.rotation = q_OriginalRotation;
     }
 }

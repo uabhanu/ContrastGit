@@ -53,5 +53,7 @@ public class PickupCollectible : MonoBehaviour {
         GameObject parentPetal = o_AvailableCollectible.gameObject.transform.parent.gameObject;
         Destroy(parentPetal);
         HorrorPlayerStats.horrorPlayerStats.iCollectiblesGathered += 1;
+        UIManager.uiManager.petalsCount++;
+
     }
 }
