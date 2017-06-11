@@ -103,6 +103,7 @@ public class FoxRequest : MonoBehaviour {
 
     Transform ChooseRandomDropPosition() {
         int randN = Random.Range(0, availableDropPositions.Length);
+        Debug.Log(randN);
         return availableDropPositions[randN];
     }
 }
