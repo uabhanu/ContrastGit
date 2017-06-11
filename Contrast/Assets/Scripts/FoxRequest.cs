@@ -27,6 +27,9 @@ public class FoxRequest : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        foreach (FlowerType f in flowerList) {
+            Physics.IgnoreCollision(f.GetComponent<Collider>(), HorrorPlayerStats.horrorPlayerStats.GetComponent<Collider>());
+        }
         currentRequest = null;
         regenCooldown = 1.5f;
         timer = 0;

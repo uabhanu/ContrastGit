@@ -9,6 +9,8 @@ public class HorrorPlayerStats : MonoBehaviour {
     public GameObject gateObject;
     public int totalPetals;
     public bool hasOpenedTheGate = false;
+    public GameObject lawnmower;
+    public GameObject gateBush;
 
     private void Awake () {
         if (horrorPlayerStats == null) {
@@ -30,6 +32,8 @@ public class HorrorPlayerStats : MonoBehaviour {
             if(iCollectiblesGathered >= totalPetals) {
                 hasOpenedTheGate = true;
                 gateObject.SetActive(false);
+                gateBush.SetActive(false);
+                lawnmower.SetActive(true);
             }
         }
 	}

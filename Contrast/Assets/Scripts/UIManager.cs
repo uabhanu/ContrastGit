@@ -5,8 +5,15 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public static UIManager uiManager;
     [SerializeField] Image[] petalImages;
-    [SerializeField] int petalsCount;
+    public int petalsCount;
+
+    private void Awake () {
+        if(uiManager == null) {
+            uiManager = this;
+        }
+    }
 
     void Start()
     {
