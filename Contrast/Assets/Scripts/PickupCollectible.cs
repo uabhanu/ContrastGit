@@ -50,7 +50,8 @@ public class PickupCollectible : MonoBehaviour {
     private void PickupObject () {
         Debug.Log("Picked up Collectible");
         b_IsPickupAvailable = false;
-        Destroy(o_AvailableCollectible);
+        GameObject parentPetal = o_AvailableCollectible.gameObject.transform.parent.gameObject;
+        Destroy(parentPetal);
         HorrorPlayerStats.horrorPlayerStats.iCollectiblesGathered += 1;
     }
 }

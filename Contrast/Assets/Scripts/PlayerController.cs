@@ -7,10 +7,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float m_moveSpeed;
     float m_distanceToObstacle;
     [SerializeField] GameObject m_enemyObj;
+    public Transform monsterAnim;
+    public float maxDistanceToPickup = 3.5f;
 
     private void Start()
     {
-        
+        maxDistanceToPickup = 3.5f;
     }
 
     private void Update()
@@ -47,10 +49,22 @@ public class PlayerController : MonoBehaviour
         {
             //Debug.Log("A Button Pressed");
 
-            RaycastHit hit;
+            //RaycastHit hit;
 
             if (m_enemyObj == null)
             {
+                GameObject obj = PickupClosestFlower();
+                if (obj != null) {
+                    m_enemyCollider = obj.GetComponent<Collider>();
+                    m_enemyCollider.enabled = false;
+                    m_enemyObj = obj;
+                    m_enemyObj.GetComponent<FlowerType>().hasBeenDropped = false;
+                    if (m_enemyObj.GetComponent<HorrorPlayerStats>()) { 
+                        m_enemyObj.GetComponent<HorrorPlayerStats>().isBeingHeld = true; 
+
+                    }
+                }
+                /*
                 Vector3 rPosition = transform.position + (transform.forward.normalized * 0.2f);
                 //Debug.DrawLine(transform.position, rPosition);
 
@@ -72,6 +86,7 @@ public class PlayerController : MonoBehaviour
                         }
                     }
                 }
+                */
             }
             else
             {
@@ -79,6 +94,11 @@ public class PlayerController : MonoBehaviour
                 if (m_enemyObj.GetComponent<FlowerType>()) {
                     m_enemyObj.GetComponent<FlowerType>().hasBeenDropped = true;
                 }
+                if (m_enemyObj.GetComponent<HorrorPlayerStats>()) {
+                    m_enemyObj.GetComponent<HorrorPlayerStats>().isBeingHeld = false;
+
+                }
+                m_enemyCollider = null;
                 m_enemyObj = null;
             }
         }
@@ -103,8 +123,36 @@ public class PlayerController : MonoBehaviour
         if(movement.magnitude > 0)
         {
             transform.rotation = Quaternion.LookRotation(movement);
+            monsterAnim.GetComponent<Animator>().SetBool("isMoving", true);
+        } else {
+            monsterAnim.GetComponent<Animator>().SetBool("isMoving", false);
         }
 
         transform.Translate(movement * m_moveSpeed * Time.deltaTime , Space.World);
+    }
+
+    GameObject PickupClosestFlower () {
+        GameObject closest = null;
+        foreach (FlowerType f in FoxRequest.foxRequest.flowerList) {
+            float distance = Vector3.Distance(transform.position, f.gameObject.transform.position);
+            //print(f.gameObject.name + "|" + distance);
+            if (distance <= maxDistanceToPickup) {
+                print(f.gameObject.name);
+                if (closest == null)
+                    closest = f.gameObject;
+                else {
+                    if(distance < Vector3.Distance(transform.position, closest.transform.position)) {
+                        closest = f.gameObject;
+                    }
+                }
+            }
+        }
+        
+        if (closest != null) {
+            //print(closest.name + "|" + Vector3.Distance(transform.position, closest.transform.position));
+            return closest;
+        }
+            
+        return null;
     }
 }

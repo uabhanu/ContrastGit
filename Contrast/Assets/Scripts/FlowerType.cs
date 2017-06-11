@@ -16,21 +16,18 @@ public class FlowerType : MonoBehaviour {
 	void Update () {
         if (hasBeenDropped) {
             float distanceToFox = Vector3.Distance(transform.position, FoxRequest.foxRequest.transform.position);
-            print(distanceToFox);
+            //print(distanceToFox);
             if(distanceToFox <= FoxRequest.foxRequest.pickupThreshold) {
-                print("IS FOX");
                 FoxRequest foxComp = FoxRequest.foxRequest.GetComponent<FoxRequest>();
-                //Check against fox request
 
                 //remove the object from the flower storage
                 if (flowerType == foxComp.currentRequest) {
                     foxComp.DeliveryFeedback(true);
+                    Destroy(gameObject);
                 } else {
+                    foxComp.deliveredFlower = this.transform;
                     foxComp.DeliveryFeedback(false);
                 }
-                foxComp.GenerateNextRequest();
-                //destroy the object
-                Destroy(gameObject);
             }
         }
 
