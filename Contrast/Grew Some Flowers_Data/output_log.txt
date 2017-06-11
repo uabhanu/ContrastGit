@@ -17,82 +17,64 @@ Platform assembly: C:\Users\Rui\Documents\Escape Studios GameJam\ContrastGit\Con
 Loading C:\Users\Rui\Documents\Escape Studios GameJam\ContrastGit\Contrast\Grew Some Flowers_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Rui\Documents\Escape Studios GameJam\ContrastGit\Contrast\Grew Some Flowers_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Rui\Documents\Escape Studios GameJam\ContrastGit\Contrast\Grew Some Flowers_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.036 seconds
+- Completed reload, in  0.029 seconds
 Platform assembly: C:\Users\Rui\Documents\Escape Studios GameJam\ContrastGit\Contrast\Grew Some Flowers_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Rui\Documents\Escape Studios GameJam\ContrastGit\Contrast\Grew Some Flowers_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.765336 ms
+UnloadTime: 3.883854 ms
 displays connected: 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at FoxRequest.GenerateNextRequest () [0x00000] in <filename unknown>:0 
-  at FoxRequest.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerController.PickupClosestFlower () [0x00000] in <filename unknown>:0 
-  at PlayerController.PlayerMovement () [0x00000] in <filename unknown>:0 
-  at PlayerController.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerController.PickupClosestFlower () [0x00000] in <filename unknown>:0 
-  at PlayerController.PlayerMovement () [0x00000] in <filename unknown>:0 
-  at PlayerController.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerController.PickupClosestFlower () [0x00000] in <filename unknown>:0 
-  at PlayerController.PlayerMovement () [0x00000] in <filename unknown>:0 
-  at PlayerController.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerController.PickupClosestFlower () [0x00000] in <filename unknown>:0 
-  at PlayerController.PlayerMovement () [0x00000] in <filename unknown>:0 
-  at PlayerController.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerController.PickupClosestFlower () [0x00000] in <filename unknown>:0 
-  at PlayerController.PlayerMovement () [0x00000] in <filename unknown>:0 
-  at PlayerController.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerController.PickupClosestFlower () [0x00000] in <filename unknown>:0 
-  at PlayerController.PlayerMovement () [0x00000] in <filename unknown>:0 
-  at PlayerController.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerController.PickupClosestFlower () [0x00000] in <filename unknown>:0 
-  at PlayerController.PlayerMovement () [0x00000] in <filename unknown>:0 
-  at PlayerController.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerController.PickupClosestFlower () [0x00000] in <filename unknown>:0 
-  at PlayerController.PlayerMovement () [0x00000] in <filename unknown>:0 
-  at PlayerController.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 6ed0 -> priority: 1 
-  Thread -> id: 80f0 -> priority: 1 
-  Thread -> id: 80d0 -> priority: 1 
-  Thread -> id: 46f0 -> priority: 1 
+  Thread -> id: 9cf4 -> priority: 1 
+  Thread -> id: 9f34 -> priority: 1 
+  Thread -> id: 9eb4 -> priority: 1 
+  Thread -> id: 9f74 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.663113 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2247.
+Total: 0.491457 ms (FindLiveObjects: 0.106271 ms CreateObjectMapping: 0.044246 ms MarkObjects: 0.323160 ms  DeleteObjects: 0.016987 ms)
+
+Picked up Collectible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Picked up Collectible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Picked up Collectible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Picked up Collectible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Picked up Collectible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Picked up Collectible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Picked up Collectible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Picked up Collectible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.780253 ms
+
+Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 319.
+Total: 1.239704 ms (FindLiveObjects: 0.046617 ms CreateObjectMapping: 0.050567 ms MarkObjects: 0.398222 ms  DeleteObjects: 0.743506 ms)
+

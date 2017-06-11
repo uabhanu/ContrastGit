@@ -23,9 +23,11 @@ public class FlowerType : MonoBehaviour {
                 //remove the object from the flower storage
                 if (flowerType == foxComp.currentRequest) {
                     foxComp.DeliveryFeedback(true);
-                    Destroy(gameObject);
+                    if (!GetComponent<HorrorPlayerStats>()) {
+                        Destroy(gameObject);
+                    }
                 } else {
-                    foxComp.deliveredFlower = this.transform;
+                    foxComp.deliveredFlower = transform;
                     foxComp.DeliveryFeedback(false);
                 }
             }

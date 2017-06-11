@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartScreenHandler : MonoBehaviour {
+public class EndScreenToStart : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,8 +13,8 @@ public class StartScreenHandler : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Return)) {
-            //load Level
-            SceneManager.LoadScene("finalmap");
+            SceneManager.LoadScene("StartScreen");
         }
 	}
+
 }

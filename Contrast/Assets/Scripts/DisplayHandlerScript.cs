@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class DisplayHandlerScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    void Awake () {
+        DontDestroyOnLoad(transform.gameObject);
+    }
+
+    // Use this for initialization
+    void Start () {
         Debug.Log("displays connected: " + Display.displays.Length);
         // Display.displays[0] is the primary, default display and is always ON.
         // Check if additional displays are available and activate each.

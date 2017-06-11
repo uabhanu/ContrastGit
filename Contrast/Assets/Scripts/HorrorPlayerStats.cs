@@ -37,4 +37,10 @@ public class HorrorPlayerStats : MonoBehaviour {
             }
         }
 	}
+
+    private void OnCollisionEnter (Collision collision) {
+        if (hasOpenedTheGate && collision.gameObject.CompareTag("HorrorExit")) {
+            EndgameSceneManager.endgameManager.LoadEndGameScene(true);
+        }
+    }
 }

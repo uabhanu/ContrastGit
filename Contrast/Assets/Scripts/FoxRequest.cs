@@ -68,7 +68,9 @@ public class FoxRequest : MonoBehaviour {
             flowerList.RemoveAt(0);
             if (flowerList.Count > 0) {                
                 currentRequest = flowerList[0].flowerType;
-            }            
+            }  else {
+                EndgameSceneManager.endgameManager.LoadEndGameScene(false);
+            }          
         } else {
             currentRequest = flowerList[0].flowerType;
         }
