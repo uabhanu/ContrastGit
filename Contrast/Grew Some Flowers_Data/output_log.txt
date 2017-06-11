@@ -17,30 +17,58 @@ Platform assembly: C:\Users\Rui\Documents\Escape Studios GameJam\ContrastGit\Con
 Loading C:\Users\Rui\Documents\Escape Studios GameJam\ContrastGit\Contrast\Grew Some Flowers_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Rui\Documents\Escape Studios GameJam\ContrastGit\Contrast\Grew Some Flowers_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Rui\Documents\Escape Studios GameJam\ContrastGit\Contrast\Grew Some Flowers_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.029 seconds
+- Completed reload, in  0.034 seconds
 Platform assembly: C:\Users\Rui\Documents\Escape Studios GameJam\ContrastGit\Contrast\Grew Some Flowers_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Rui\Documents\Escape Studios GameJam\ContrastGit\Contrast\Grew Some Flowers_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.883854 ms
+UnloadTime: 1.584198 ms
 displays connected: 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 9cf4 -> priority: 1 
-  Thread -> id: 9f34 -> priority: 1 
-  Thread -> id: 9eb4 -> priority: 1 
-  Thread -> id: 9f74 -> priority: 1 
+  Thread -> id: 8004 -> priority: 1 
+  Thread -> id: 93e8 -> priority: 1 
+  Thread -> id: 9c18 -> priority: 1 
+  Thread -> id: 8fdc -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.663113 ms
+UnloadTime: 6.701042 ms
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2247.
-Total: 0.491457 ms (FindLiveObjects: 0.106271 ms CreateObjectMapping: 0.044246 ms MarkObjects: 0.323160 ms  DeleteObjects: 0.016987 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2308.
+Total: 0.655407 ms (FindLiveObjects: 0.142617 ms CreateObjectMapping: 0.063604 ms MarkObjects: 0.425086 ms  DeleteObjects: 0.023703 ms)
 
 Picked up Collectible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OrangeFlower
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WRONG!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Picked up Collectible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OrangeFlower
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WRONG!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -52,7 +80,11 @@ Picked up Collectible
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Picked up Collectible
+WhiteFlower
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Correct Delivery
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -60,7 +92,15 @@ Picked up Collectible
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Picked up Collectible
+RedFlower
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WRONG!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+3
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -68,13 +108,49 @@ Picked up Collectible
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+OrangeFlower
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Correct Delivery
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+RedFlower
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 Picked up Collectible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Correct Delivery
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+HorrorPlayer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Correct Delivery
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 8.780253 ms
+UnloadTime: 3.380150 ms
 
-Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 319.
-Total: 1.239704 ms (FindLiveObjects: 0.046617 ms CreateObjectMapping: 0.050567 ms MarkObjects: 0.398222 ms  DeleteObjects: 0.743506 ms)
+Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 326.
+Total: 7.998426 ms (FindLiveObjects: 0.022518 ms CreateObjectMapping: 0.019358 ms MarkObjects: 0.169876 ms  DeleteObjects: 7.786277 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.351210 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 329.
+Total: 0.216493 ms (FindLiveObjects: 0.021333 ms CreateObjectMapping: 0.018567 ms MarkObjects: 0.159605 ms  DeleteObjects: 0.016197 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.297876 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2308.
+Total: 0.476839 ms (FindLiveObjects: 0.108246 ms CreateObjectMapping: 0.048987 ms MarkObjects: 0.302617 ms  DeleteObjects: 0.016592 ms)
 

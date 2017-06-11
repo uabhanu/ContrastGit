@@ -26,14 +26,19 @@ public class UIManager : MonoBehaviour
         {
             return;
         }
-
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if(petalsCount < petalImages.Length)
-            {
-                petalsCount++;
-                petalImages[petalsCount - 1].enabled = true;
-            }
+            
         }
+
+
 	}
+
+    public void Incrementpetals () {
+        if (petalsCount < petalImages.Length) {
+            petalsCount++;
+            petalImages[petalsCount - 1].enabled = true;
+        }
+    }
 }

@@ -10,10 +10,14 @@ public class PickupCollectible : MonoBehaviour {
     private bool b_IsPickupAvailable;
     [SerializeField]
     private GameObject o_AvailableCollectible;
+	private AudioSource mySound;
+	public AudioClip pickupSound;
 
     // Use this for initialization
     void Start () {
         b_IsPickupAvailable = false;
+
+		mySound = GetComponent<AudioSource> ();
 
     }
 	
@@ -22,6 +26,7 @@ public class PickupCollectible : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.E)) {
             if(b_IsPickupAvailable && o_AvailableCollectible != null) {
                 PickupObject();
+
             }
         }
 	}
@@ -53,7 +58,9 @@ public class PickupCollectible : MonoBehaviour {
         GameObject parentPetal = o_AvailableCollectible.gameObject.transform.parent.gameObject;
         Destroy(parentPetal);
         HorrorPlayerStats.horrorPlayerStats.iCollectiblesGathered += 1;
-        UIManager.uiManager.petalsCount++;
+        UIManager.uiManager.Incrementpetals();
+
+        mySound.PlayOneShot (pickupSound);
 
     }
 }

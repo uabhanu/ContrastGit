@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class DisplayHandlerScript : MonoBehaviour {
 
+    public static DisplayHandlerScript displayHandlerScript;
+
     void Awake () {
         DontDestroyOnLoad(transform.gameObject);
+        if (displayHandlerScript == null) {
+            displayHandlerScript = this;
+        } else if(displayHandlerScript != this) {
+            Destroy(gameObject);
+        }
     }
 
     // Use this for initialization

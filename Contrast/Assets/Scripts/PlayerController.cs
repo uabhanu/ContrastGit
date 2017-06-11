@@ -3,12 +3,20 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-    Collider m_enemyCollider;
+    public static PlayerController player;
+    public Collider m_enemyCollider;
     [SerializeField] float m_moveSpeed;
     float m_distanceToObstacle;
-    [SerializeField] GameObject m_enemyObj;
+    public GameObject m_enemyObj;
     public Transform monsterAnim;
     public float maxDistanceToPickup = 3.5f;
+
+    private void Awake () {
+        if (player==null) { 
+
+             player = this;
+        }
+    }
 
     private void Start()
     {
@@ -97,6 +105,8 @@ public class PlayerController : MonoBehaviour
                 }
                 if (m_enemyObj.GetComponent<HorrorPlayerStats>()) {
                     m_enemyObj.GetComponent<HorrorPlayerStats>().isBeingHeld = false;
+                    Vector3 pos = new Vector3(m_enemyObj.transform.position.x, 1, m_enemyObj.transform.position.z);
+                    m_enemyObj.transform.position = pos;
 
                 }
                 m_enemyCollider = null;

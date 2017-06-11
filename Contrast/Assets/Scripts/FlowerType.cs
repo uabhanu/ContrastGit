@@ -25,6 +25,8 @@ public class FlowerType : MonoBehaviour {
                     foxComp.DeliveryFeedback(true);
                     if (!GetComponent<HorrorPlayerStats>()) {
                         Destroy(gameObject);
+                    } else {
+                        EndgameSceneManager.endgameManager.LoadEndGameScene(false);
                     }
                 } else {
                     foxComp.deliveredFlower = transform;
